@@ -41,6 +41,16 @@ print(arr[[0,2]]) # 1D ARRAY
 print(arr1[[0,1],[2,0]]) # 2D ARRAY
 print(arr2[[0,1],[1,0],[2,3]]) # 3D ARRAY
 
+# Boolean Indexing
+
+print(arr1[arr1<5]) 
+
+# Other Basic Operations 
+print(arr*2)
+print(arr**2)
+print(arr+[2,3,4])
+
+
 # trying zeroes,ones functions
 print(np.zeros((2,2),dtype=int)) 
 print(np.ones((2,2),dtype=str))
