@@ -1,8 +1,13 @@
+#importing numpy 
 import numpy as np
+
+# 1D array
 list=[1,2,3]
 arr=np.array(list,dtype=int)
 print(arr)
 print(arr.shape)
+
+# 2D array
 list1=[2,3,4,5]
 list2=[6,7,8,9]
 arr1=np.array([list1,list2])
