@@ -71,3 +71,19 @@ print(np.arange(6).reshape(3,-1)) # detecting size of remaning 1 demionsion bi i
 
 b=np.linspace(1,10,5)
 print(b)
+
+# copy vs view array
+
+# copy array -- owns the data 
+A=np.arange(5)
+print(A)
+B=A.copy()
+B[1]=10
+print(A)
+print(B)
+
+# view array--- dont owns the data
+C=A.view()
+C[1]=20
+print(A)
+print(C)
