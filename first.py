@@ -24,9 +24,16 @@ arr2=np.array([
 print(arr2)
 print(arr2.shape)
 
-# array indexing
+# SLICING
+
+# accesing 1D elements
 print(arr[::2])
-print(arr1[0:1,1:3])
+
+# accesing 2D elements
+print(arr1[:,1])
+
+# accesing 3d elements
+print(arr2[:,:,2]) # all layers all rows 2 col (3rd col)
 
 # trying zeroes,ones functions
 print(np.zeros((2,2),dtype=int)) 
