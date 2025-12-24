@@ -12,3 +12,7 @@ print(arr1.shape)
 # array indexing4
 print(arr[::2])
 print(arr1[0:1,1:3])
+
+# tring zeroes,ones functions
+print(np.zeros((2,2),dtype=int)) 
+print(np.ones((2,2),dtype=str))
