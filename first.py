@@ -14,6 +14,16 @@ arr1=np.array([list1,list2])
 print(arr1)
 print(arr1.shape)
 
+# 3D array
+list3=[10,11,12,13]
+list4=[14,15,16,17]
+arr2=np.array([
+    [list1,list2],
+    [list3,list4]
+])
+print(arr2)
+print(arr2.shape)
+
 # array indexing
 print(arr[::2])
 print(arr1[0:1,1:3])
