@@ -35,6 +35,12 @@ print(arr1[:,1])
 # accesing 3d elements
 print(arr2[:,:,2]) # all layers all rows 2 col (3rd col)
 
+# Fancy Indexing
+
+print(arr[[0,2]]) # 1D ARRAY
+print(arr1[[0,1],[2,0]]) # 2D ARRAY
+print(arr2[[0,1],[1,0],[2,3]]) # 3D ARRAY
+
 # trying zeroes,ones functions
 print(np.zeros((2,2),dtype=int)) 
 print(np.ones((2,2),dtype=str))
