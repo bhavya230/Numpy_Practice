@@ -9,10 +9,27 @@ arr1=np.array([list1,list2])
 print(arr1)
 print(arr1.shape)
 
-# array indexing4
+# array indexing
 print(arr[::2])
 print(arr1[0:1,1:3])
 
-# tring zeroes,ones functions
+# trying zeroes,ones functions
 print(np.zeros((2,2),dtype=int)) 
 print(np.ones((2,2),dtype=str))
+
+# arange()
+
+a=np.arange(10)
+print(a)
+
+#reshape()
+a_new=a.reshape((2,5))
+print(a_new)
+print(a_new.base) # IT IS VIEW AS ORIGNAL ARRAY IS RETURED
+
+print(np.arange(6).reshape(3,-1)) # detecting size of remaning 1 demionsion bi itself
+
+#linspace()
+
+b=np.linspace(1,10,5)
+print(b)
