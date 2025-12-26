@@ -87,3 +87,8 @@ C=A.view()
 C[1]=20
 print(A)
 print(C)
+
+# Broadcasting
+
+print(np.array([1,2,3]) +10)
+print(np.array([1,2,3])+np.array([[1,2,3],[1,2,3]]))
