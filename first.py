@@ -92,3 +92,29 @@ print(C)
 
 print(np.array([1,2,3]) +10)
 print(np.array([1,2,3])+np.array([[1,2,3],[1,2,3]]))
+
+# Array Iteration--simple
+
+for x in np.nditer(arr):
+    print(x)
+
+for x in np.nditer(arr1):
+    print(x)
+
+
+for x in np.nditer(arr2):
+    print(x)
+
+# Array Iteration -- diff data types
+
+for x in np.nditer(arr,flags=['buffered'],op_dtypes=['S']):
+    print(x)
+
+# Array Iteration -- diff step size
+
+for x in np.nditer(arr1[:,::2]):
+    print(x)
+
+# Array Iteration -- with index 
+for indx,x in np.ndenumerate(arr2):
+    print(f"index: {indx} of {x}")
