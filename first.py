@@ -118,3 +118,9 @@ for x in np.nditer(arr1[:,::2]):
 # Array Iteration -- with index 
 for indx,x in np.ndenumerate(arr2):
     print(f"index: {indx} of {x}")
+
+# Searching array
+print(np.where(arr < 3))
+
+# sorting
+print(np.sort(arr2))
